@@ -1,8 +1,13 @@
-import Image from "next/image";
+// import Image from "next/image";
 import { Inter } from "next/font/google";
+import { useRouter } from 'next/router';
+
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  return <div></div>;
+  const router = useRouter();
+  return <div>
+     <button onClick={() => router.push('/Navbar')}>Navbar</button>
+  </div>;
 }
