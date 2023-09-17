@@ -16,6 +16,7 @@ module.exports = {
     colors: {
       canva_color: '#0E172B',
       canva_nav: '#131B2E',
+      whitee:'#FFFFFF',
 
     }
   },
