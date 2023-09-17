@@ -13,6 +13,12 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
     },
+    colors: {
+      canva_color: '#0E172B',
+      canva_nav: '#131B2E',
+      whitee:'#FFFFFF',
+
+    }
   },
   plugins: [],
 }
