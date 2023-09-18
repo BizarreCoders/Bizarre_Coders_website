@@ -1,10 +1,12 @@
 import React from 'react';
+import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Image from "next/image";
 import logo from './assets/Bizarre_Coders_logo.png'
 import githublogo from './assets/github.png'
 
 function Navbar() {
+  const router = useRouter();
   return (
     <div className="w-full h-20">
         <nav className="bg-canva_nav">
@@ -39,29 +41,34 @@ function Navbar() {
           <div class="hidden w-full md:block md:w-auto" id="navbar-default">
             <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <li>
-              <Link href="/home" target="_blank" className="text-whitee">
+              <button className="text-whitee" onClick={() => router.push('/home')}>
                 Home
-              </Link> 
+              </button> 
               </li>
               <li>
-              <Link href="/about" target="_blank" className="text-whitee">     
-                About 
-              </Link>  
+              <button className="text-whitee" onClick={() => router.push('/about')}>
+                About
+              </button>  
               </li>
               <li>
-              <Link href="/testimonials" target="_blank" className="text-whitee">
-                Testimonials 
-              </Link> 
+              <button className="text-whitee" onClick={() => router.push('/testinomials')}>
+                Testimonials
+              </button>
               </li>
               <li>
+              <button className="text-whitee" onClick={() => router.push('/team')}>
+                Team
+              </button>
+              </li>
+              {/* <li>
               <Link href="/team" target="_blank" className="text-whitee">
                 Team         
               </Link> 
-              </li>
+              </li> */}
               <li>
-              <Link href="/contact" target="_blank" className="text-whitee">
-                Contact           
-              </Link> 
+              <button className="text-whitee" onClick={() => router.push('/contact')}>
+                Contact
+              </button>
               </li>
               <li>
               <Link href="https://github.com/ARYAN-CODES-STAR/Bizarre-Coders-Website" className="flex ml-16">

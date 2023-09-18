@@ -10,6 +10,7 @@ export default function Home() {
   const router = useRouter();
   return <div>
   <Navbar />
-     {/* <button onClick={() => router.push('/Navbar')}>Navbar</button> */}
+  
+     {/* <button onClick={() => router.push('/team')}>Team</button> */}
   </div>;
 }
