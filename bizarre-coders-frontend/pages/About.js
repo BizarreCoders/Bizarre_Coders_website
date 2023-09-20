@@ -176,6 +176,7 @@ export default function Team() {
               <img src="https://pbs.twimg.com/profile_images/1690363217175011328/d-WnhoOs_400x400.jpg" alt="" />
             </foreignObject>
           </svg>
+          <button onClick={scrollPageUp}>Scroll Up</button>
         </div>
       </div>
     </div>
