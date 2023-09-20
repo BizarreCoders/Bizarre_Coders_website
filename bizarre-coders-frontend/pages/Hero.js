@@ -2,7 +2,8 @@ import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Image from 'next/image';
-import githublogo from "./assets/github.png"
+import githublogo from "./assets/github.png";
+import img1 from "./assets/BC_1.jpeg"
 
 function Hero() {
   return (
@@ -25,7 +26,7 @@ function Hero() {
             {/* className="w-16 h-16" */}
           </div>
           <div>
-            <Image src={githublogo} alt="Image 2" width={200} height={200}/>
+            <Image src={img1} alt="Image 2" width={200} height={200}/>
           </div>
           
         </Carousel>
