@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import logo from "./assets/Bizarre_Coders_logo.png";
 import githublogo from "./assets/github.png";
+// import About from "./About"
 
 function Navbar() {
   const router = useRouter();
@@ -50,7 +51,9 @@ function Navbar() {
               <li>
                 <button
                   className="text-whitee"
-                  onClick={() => router.push("/about")}
+                  onClick={() => router.push("/About")
+                  // component ={<About />}
+                  }
                 >
                   About
                 </button>
