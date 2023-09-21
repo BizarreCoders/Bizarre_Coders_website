@@ -1,175 +1,83 @@
-import React from 'react';
-import { useState } from 'react';
-import { Dialog } from '@headlessui/react';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import { ChevronRightIcon } from '@heroicons/react/20/solid';
-
-const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
+/*
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/aspect-ratio'),
+    ],
+  }
+  ```
+*/
+const people = [
+  {
+    name: 'Aryan Sharma',
+    role: 'Front-end Developer',
+    imageUrl:
+      'https://pbs.twimg.com/profile_images/1581964383013720064/Ae8N6OT9_400x400.jpg',
+    twitterUrl: '#',
+    linkedinUrl: '#',
+  },
+  // More people...
 ]
 
-export default function Team() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
+export default function Example() {
   return (
-    <div className="relative isolate bg-white">
-      <svg
-        className="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
-        aria-hidden="true"
-      >
-        <defs>
-          <pattern
-            id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527"
-            width={200}
-            height={200}
-            x="50%"
-            y={-1}
-            patternUnits="userSpaceOnUse"
+    <div className="bg-white">
+      <div className="mx-auto max-w-7xl py-12 px-6 lg:px-8 lg:py-24">
+        <div className="space-y-12">
+          <div className="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none">
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Our Team</h2>
+            <p className="text-xl text-gray-500">
+          
+            </p>
+          </div>
+          <ul
+            role="list"
+            className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8"
           >
-            <path d="M100 200V.5M.5 .5H200" fill="none" />
-          </pattern>
-        </defs>
-        <svg x="50%" y={-1} className="overflow-visible fill-gray-50">
-          <path
-            d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
-            strokeWidth={0}
-          />
-        </svg>
-        <rect width="100%" height="100%" strokeWidth={0} fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" />
-      </svg>
-      <div className="px-6 pt-6 lg:px-8">
-        <nav className="flex items-center justify-between" aria-label="Global">
-          <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              <img className="h-8" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
-            </a>
-          </div>
-          <div className="flex lg:hidden">
-            <button
-              type="button"
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-              onClick={() => setMobileMenuOpen(true)}
-            >
-              <span className="sr-only">Open main menu</span>
-              <Bars3Icon className="h-6 w-6" aria-hidden="true" />
-            </button>
-          </div>
-          <div className="hidden lg:flex lg:gap-x-12">
-            {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-900">
-                {item.name}
-              </a>
+            {people.map((person) => (
+              <li key={person.name}>
+                <div className="space-y-4">
+                  <div className="aspect-w-3 aspect-h-2">
+                    <img className="rounded-lg object-cover shadow-lg" src={person.imageUrl} alt="" />
+                  </div>
+
+                  <div className="space-y-2">
+                    <div className="space-y-1 text-lg font-medium leading-6">
+                      <h3>{person.name}</h3>
+                      <p className="text-indigo-600">{person.role}</p>
+                    </div>
+                    <ul role="list" className="flex space-x-5">
+                      <li>
+                        <a href={person.twitterUrl} className="text-gray-400 hover:text-gray-500">
+                          <span className="sr-only">Twitter</span>
+                          <svg className="h-5 w-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84" />
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href={person.linkedinUrl} className="text-gray-400 hover:text-gray-500">
+                          <span className="sr-only">LinkedIn</span>
+                          <svg className="h-5 w-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                              fillRule="evenodd"
+                              d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
+                              clipRule="evenodd"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
             ))}
-          </div>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-              Log in <span aria-hidden="true">&rarr;</span>
-            </a>
-          </div>
-        </nav>
-        <Dialog as="div" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
-          <Dialog.Panel focus="true" className="fixed inset-0 z-10 overflow-y-auto bg-white px-6 py-6 lg:hidden">
-            <div className="flex items-center justify-between">
-              <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
-                <img className="h-8" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
-              </a>
-              <button
-                type="button"
-                className="-m-2.5 rounded-md p-2.5 text-gray-700"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                <span className="sr-only">Close menu</span>
-                <XMarkIcon className="h-6 w-6" aria-hidden="true" />
-              </button>
-            </div>
-            <div className="mt-6 flow-root">
-              <div className="-my-6 divide-y divide-gray-500/10">
-                <div className="space-y-2 py-6">
-                  {navigation.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10"
-                    >
-                      {item.name}
-                    </a>
-                  ))}
-                </div>
-                <div className="py-6">
-                  <a
-                    href="#"
-                    className="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-6 text-gray-900 hover:bg-gray-400/10"
-                  >
-                    Log in
-                  </a>
-                </div>
-              </div>
-            </div>
-          </Dialog.Panel>
-        </Dialog>
-      </div>
-      <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-40">
-        <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
-          <div className="flex">
-            <div className="relative flex items-center gap-x-4 rounded-full py-1 px-4 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-              <span className="font-semibold text-indigo-600">We’re hiring</span>
-              <span className="h-4 w-px bg-gray-900/10" aria-hidden="true" />
-              <a href="#" className="flex items-center gap-x-1">
-                <span className="absolute inset-0" aria-hidden="true" />
-                See open positions
-                <ChevronRightIcon className="-mr-2 h-5 w-5 text-gray-400" aria-hidden="true" />
-              </a>
-            </div>
-          </div>
-          <h1 className="mt-10 max-w-lg text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-            A better way to ship your projects
-          </h1>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
-            Esse id magna consectetur fugiat non dolor in ad laboris magna laborum ea consequat. Nisi irure aliquip nisi
-            adipisicing veniam voluptate id. In veniam incididunt ex veniam adipisicing sit.
-          </p>
-          <div className="mt-10 flex items-center gap-x-6">
-            <a
-              href="#"
-              className="rounded-md bg-indigo-600 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-            >
-              Get started
-            </a>
-            <a href="#" className="text-base font-semibold leading-7 text-gray-900">
-              Learn more <span aria-hidden="true">→</span>
-            </a>
-          </div>
-        </div>
-        <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
-          <svg viewBox="0 0 366 729" role="img" className="mx-auto w-[22.875rem] max-w-full drop-shadow-xl">
-            <title>App screenshot</title>
-            <defs>
-              <clipPath id="2ade4387-9c63-4fc4-b754-10e687a0d332">
-                <rect width={316} height={684} rx={36} />
-              </clipPath>
-            </defs>
-            <path
-              fill="#4B5563"
-              d="M363.315 64.213C363.315 22.99 341.312 1 300.092 1H66.751C25.53 1 3.528 22.99 3.528 64.213v44.68l-.857.143A2 2 0 0 0 1 111.009v24.611a2 2 0 0 0 1.671 1.973l.95.158a2.26 2.26 0 0 1-.093.236v26.173c.212.1.398.296.541.643l-1.398.233A2 2 0 0 0 1 167.009v47.611a2 2 0 0 0 1.671 1.973l1.368.228c-.139.319-.314.533-.511.653v16.637c.221.104.414.313.56.689l-1.417.236A2 2 0 0 0 1 237.009v47.611a2 2 0 0 0 1.671 1.973l1.347.225c-.135.294-.302.493-.49.607v377.681c0 41.213 22 63.208 63.223 63.208h95.074c.947-.504 2.717-.843 4.745-.843l.141.001h.194l.086-.001 33.704.005c1.849.043 3.442.37 4.323.838h95.074c41.222 0 63.223-21.999 63.223-63.212v-394.63c-.259-.275-.48-.796-.63-1.47l-.011-.133 1.655-.276A2 2 0 0 0 366 266.62v-77.611a2 2 0 0 0-1.671-1.973l-1.712-.285c.148-.839.396-1.491.698-1.811V64.213Z"
-            />
-            <path
-              fill="#343E4E"
-              d="M16 59c0-23.748 19.252-43 43-43h246c23.748 0 43 19.252 43 43v615c0 23.196-18.804 42-42 42H58c-23.196 0-42-18.804-42-42V59Z"
-            />
-            <foreignObject
-              width={316}
-              height={684}
-              transform="translate(24 24)"
-              clipPath="url(#2ade4387-9c63-4fc4-b754-10e687a0d332)"
-            >
-              <img src="https://pbs.twimg.com/profile_images/1690363217175011328/d-WnhoOs_400x400.jpg" alt="" />
-            </foreignObject>
-          </svg>
+          </ul>
         </div>
       </div>
     </div>
