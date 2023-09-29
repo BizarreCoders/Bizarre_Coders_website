@@ -86,7 +86,7 @@ export default function Example() {
                 <div className="space-y-4">
                   <div className="aspect-w-3 aspect-h-2">
                     <img
-                      className="rounded-lg object-cover shadow-lg"
+                      className="rounded-lg object-cover shadow-lg hover:scale-110 hover:shadow-none"
                       src={person.imageUrl}
                       alt=""
                     />
