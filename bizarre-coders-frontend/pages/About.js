@@ -177,7 +177,7 @@ export default function Team() {
 
           <button
             onClick={scrollPageUp}
-            className="fixed bottom-4 right-4 p-4 bg-blue-500 text-white rounded-full shadow-lg"
+            className="fixed bottom-4 right-4 p-4 bg-white-500 text-white rounded-full shadow-lg"
           >
             <svg
               className="h-5 w-5 rtl:rotate-180 bg-black100"
