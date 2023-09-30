@@ -72,8 +72,8 @@ export default function Example() {
       <div className="mx-auto max-w-7xl py-12 px-6 lg:px-8 lg:py-24">
         <div className="space-y-12">
           <div className="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none">
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-              Our Team
+            <h2 className="text-4xl text-red-500 font-bold tracking-tight sm:text-4xl">
+              Our Core Team Members
             </h2>
             <p className="text-xl text-gray-500"></p>
           </div>
@@ -83,10 +83,10 @@ export default function Example() {
           >
             {people.map((person) => (
               <li key={person.name}>
-                <div className="space-y-4">
+                <div className="space-y-4 ">
                   <div className="aspect-w-3 aspect-h-2">
                     <img
-                      className="rounded-lg object-cover shadow-lg hover:scale-110 hover:shadow-none"
+                      className="rounded-lg object-cover shadow-lg hover:scale-110 hover:shadow-none hover:saturate-150"
                       src={person.imageUrl}
                       alt=""
                     />
