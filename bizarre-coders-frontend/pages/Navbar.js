@@ -51,8 +51,9 @@ function Navbar() {
               <li>
                 <button
                   className="text-whitee"
-                  onClick={() => router.push("/About")               
-                  // component ={<About />}
+                  onClick={
+                    () => router.push("/About")
+                    // component ={<About />}
                   }
                 >
                   About
