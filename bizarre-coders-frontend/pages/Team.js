@@ -66,6 +66,9 @@ const people = [
   // More people...
 ];
 
+function scrollPageUp() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
 export default function Example() {
   return (
     <div className="bg-white">
@@ -140,6 +143,7 @@ export default function Example() {
               </li>
             ))}
           </ul>
+          <button className="pl-2 py-2 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded-full shadow-md" onClick={scrollPageUp}>Scroll Up</button>
         </div>
       </div>
     </div>

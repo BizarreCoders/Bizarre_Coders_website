@@ -1,5 +1,13 @@
 import React from 'react'
 
+function scrollToTop() {
+  // Scroll to the top of the page smoothly
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+
 function JoinUs() {
   return (
     <section class="bg-gray-900 text-white">
@@ -7,12 +15,10 @@ function JoinUs() {
     class="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8"
   >
     <div class="mx-auto max-w-lg text-center">
-      <h2 class="text-3xl font-bold sm:text-4xl">Kickstart your marketing</h2>
+      <h2 class="text-3xl font-bold sm:text-4xl underline underline-offset-4 hover:underline-offset-8">Why to Join Us:</h2>
 
       <p class="mt-4 text-gray-300">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur
-        aliquam doloribus nesciunt eos fugiat. Vitae aperiam fugit consequuntur
-        saepe laborum.
+        How does this community serve you in your growth and ease your journey.
       </p>
     </div>
 
@@ -40,7 +46,7 @@ function JoinUs() {
           />
         </svg>
 
-        <h2 class="mt-4 text-xl font-bold text-white">Digital campaigns</h2>
+        <h2 class="mt-4 text-xl font-bold text-white">MENTOR'S GUIDE & SUPPORT</h2>
 
         <p class="mt-1 text-sm text-gray-300">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
@@ -71,7 +77,7 @@ function JoinUs() {
           />
         </svg>
 
-        <h2 class="mt-4 text-xl font-bold text-white">Digital campaigns</h2>
+        <h2 class="mt-4 text-xl font-bold text-white">Community Learning</h2>
 
         <p class="mt-1 text-sm text-gray-300">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
@@ -102,7 +108,7 @@ function JoinUs() {
           />
         </svg>
 
-        <h2 class="mt-4 text-xl font-bold text-white">Digital campaigns</h2>
+        <h2 class="mt-4 text-xl font-bold text-white">Organising Various Seminars</h2>
 
         <p class="mt-1 text-sm text-gray-300">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
@@ -133,7 +139,7 @@ function JoinUs() {
           />
         </svg>
 
-        <h2 class="mt-4 text-xl font-bold text-white">Digital campaigns</h2>
+        <h2 class="mt-4 text-xl font-bold text-white">Hackathon Opportunities</h2>
 
         <p class="mt-1 text-sm text-gray-300">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
@@ -164,7 +170,7 @@ function JoinUs() {
           />
         </svg>
 
-        <h2 class="mt-4 text-xl font-bold text-white">Digital campaigns</h2>
+        <h2 class="mt-4 text-xl font-bold text-white">Exposure To Students</h2>
 
         <p class="mt-1 text-sm text-gray-300">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
@@ -195,7 +201,7 @@ function JoinUs() {
           />
         </svg>
 
-        <h2 class="mt-4 text-xl font-bold text-white">Digital campaigns</h2>
+        <h2 class="mt-4 text-xl font-bold text-white">Networking Opportunities</h2>
 
         <p class="mt-1 text-sm text-gray-300">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
@@ -212,7 +218,13 @@ function JoinUs() {
         Get Started Today
       </a>
     </div>
+    {/* <div class="fixed bottom-4 right-4">
+  <button onclick="scrollToTop()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full shadow-md">
+    Scroll to Top
+  </button>
+</div> */}
   </div>
+  
 </section>
   )
 }
