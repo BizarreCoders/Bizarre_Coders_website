@@ -4,15 +4,10 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { ChevronRightIcon } from "@heroicons/react/20/solid";
 
+
 function scrollPageUp() {
-  window.scrollTo({ top: 0, behavior: "smooth" });
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
-// const navigation = [
-//   { name: 'Product', href: '#' },
-//   { name: 'Features', href: '#' },
-//   { name: 'Marketplace', href: '#' },
-//   { name: 'Company', href: '#' },
-// ]
 
 export default function Team() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -174,29 +169,17 @@ export default function Team() {
               />
             </foreignObject>
           </svg>
-
-          <button
-            onClick={scrollPageUp}
-            className="fixed bottom-4 right-4 p-4 bg-white-500 text-white rounded-full shadow-lg"
-          >
-            <svg
-              className="h-5 w-5 rtl:rotate-180 bg-black100"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M14 5l7 7m0 0l-7 7m7-7H3"
-              />
-            </svg>
-            {/* </a> */}
-          </button>
+          <button onClick={scrollPageUp}>Scroll Up</button>
         </div>
       </div>
     </div>
-  );
+  )
 }
+
+         
+            
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
