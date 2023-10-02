@@ -143,7 +143,7 @@ export default function Example() {
               </li>
             ))}
           </ul>
-          <button className="pl-2 py-2 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded-full shadow-md" onClick={scrollPageUp}>Scroll Up</button>
+          <button className="pl-2 py-2 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded-full shadow-md sticky" onClick={scrollPageUp}>Scroll Up</button>
         </div>
       </div>
     </div>
