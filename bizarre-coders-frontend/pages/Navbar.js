@@ -83,9 +83,9 @@ function Navbar() {
               <li>
                 <button
                   className="text-whitee"
-                  onClick={() => router.push("/contact")}
+                  onClick={() => router.push("/JoinUs")}
                 >
-                  Contact
+                  Join Us
                 </button>
               </li>
               <li>
