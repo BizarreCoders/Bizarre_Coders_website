@@ -67,7 +67,7 @@ const people = [
 ];
 
 function scrollPageUp() {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
 export default function Example() {
   return (
@@ -75,7 +75,7 @@ export default function Example() {
       <div className="mx-auto max-w-7xl py-12 px-6 lg:px-8 lg:py-24">
         <div className="space-y-12">
           <div className="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none">
-            <h2 className="text-4xl text-red-500 font-bold tracking-tight sm:text-4xl">
+            <h2 className="text-4xl text-red-500 tracking-tight sm:text-4xl">
               Our Core Team Members
             </h2>
             <p className="text-xl text-gray-500"></p>
@@ -143,7 +143,12 @@ export default function Example() {
               </li>
             ))}
           </ul>
-          <button className="pl-2 py-2 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded-full shadow-md sticky" onClick={scrollPageUp}>Scroll Up</button>
+          <button
+            className="pl-2 py-2 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded-full shadow-md sticky"
+            onClick={scrollPageUp}
+          >
+            Scroll Up
+          </button>
         </div>
       </div>
     </div>
