@@ -4,7 +4,8 @@ import Link from "next/link";
 import Image from "next/image";
 import logo from "./assets/Bizarre_Coders_logo.png";
 import githublogo from "./assets/github.png";
-// import About from "./About"
+import Testimonials from "./Testimonials";
+
 
 function Navbar() {
   const router = useRouter();
@@ -13,7 +14,7 @@ function Navbar() {
       <nav className="bg-canva_nav">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <Link href="/" className="flex items-center text-white">
-            <Image src={logo} className="w-20 h-20" alt="Logo" />
+            {/* <Image src={logo} classsName="w-20 h-20" alt="Logo" /> */}
           </Link>
           <button
             data-collapse-toggle="navbar-default"
@@ -62,7 +63,8 @@ function Navbar() {
               <li>
                 <button
                   className="text-whitee"
-                  onClick={() => router.push("/testinomials")}
+                  onClick={() => router.push("/testimonial")}
+                  element={Testimonials}
                 >
                   Testimonials
                 </button>
