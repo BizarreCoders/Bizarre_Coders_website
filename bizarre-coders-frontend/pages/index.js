@@ -6,7 +6,7 @@ import Hero from "./Hero";
 import About from "./About";
 import Team from "./Team";
 import JoinUs from "./JoinUs";
-import Footer from "./footer"
+import Footer from "./footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,10 +16,10 @@ export default function Home() {
     <div>
       <Navbar />
       <div data-aos="fade-right">
-      <Hero />
-      
-      <JoinUs />
-      <Team />
+        <Hero />
+
+        <JoinUs />
+        <Team />
       </div>
       <Footer />
       {/* <button onClick={() => router.push('/team')}>Team</button> */}

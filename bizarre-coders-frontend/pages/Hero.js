@@ -7,11 +7,11 @@ import img1 from "./assets/BC_1.jpeg";
 // import Chatbot from "./Chatbot";
 
 function Hero() {
-//   const [showChatbot, setShowChatbot] = useState(false);
+  //   const [showChatbot, setShowChatbot] = useState(false);
 
-//   const handleChatbotToggle = () => {
-//     setShowChatbot(!showChatbot);
-//   };
+  //   const handleChatbotToggle = () => {
+  //     setShowChatbot(!showChatbot);
+  //   };
 
   return (
     <div className=" items-center min-h-screen py-16 bg-canva_nav ">
@@ -41,9 +41,7 @@ function Hero() {
           </div>
         </Carousel>
       </div>
-      <button className="text-whitee">
-        Open Chat
-      </button>
+      <button className="text-whitee">Open Chat</button>
       {/* {showChatbot && <Chatbot /> } */}
     </div>
   );
