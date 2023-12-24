@@ -4,9 +4,8 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { ChevronRightIcon } from "@heroicons/react/20/solid";
 
-
 function scrollPageUp() {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 export default function Team() {
@@ -173,11 +172,9 @@ export default function Team() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-         
-            
 //         </div>
 //       </div>
 //     </div>

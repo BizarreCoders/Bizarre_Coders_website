@@ -6,7 +6,6 @@ import logo from "./assets/Bizarre_Coders_logo.png";
 import githublogo from "./assets/github.png";
 import Testimonials from "./Testimonials";
 
-
 function Navbar() {
   const router = useRouter();
   return (
