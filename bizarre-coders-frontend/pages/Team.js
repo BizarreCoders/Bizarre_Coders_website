@@ -12,6 +12,7 @@
   }
   ```
 */
+
 const people = [
   {
     name: "Aryan Sharma",
@@ -76,9 +77,11 @@ export default function Example() {
         <div className="space-y-12">
           <div className="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none">
             <h2 className="text-4xl text-red-500 tracking-tight sm:text-4xl">
-              Our Core Team Members
+              <i>Our Core Team Members</i>
             </h2>
+            {/* <AnimateOnChange>Brilliantnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn</AnimateOnChange> */}
             <p className="text-xl text-gray-500"></p>
+            
           </div>
           <ul
             role="list"

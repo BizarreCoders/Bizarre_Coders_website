@@ -4,6 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Image from "next/image";
 import githublogo from "./assets/github.png";
 import img1 from "./assets/BC_1.jpeg";
+
 // import Chatbot from "./Chatbot";
 
 function Hero() {
@@ -14,11 +15,13 @@ function Hero() {
   //   };
 
   return (
-    <div className=" items-center min-h-screen py-16 bg-canva_nav ">
+    <div className=" items-center min-h-screen py-16 bg-canva_nav justify-center items-center">
       <div className="max-w-2xl px-8">
-        <h1 className="text-4xl font-bold mb-4" style={{ color: "white" }}>
-          Welcome to Our Website
+        <h1 className="text-6xl font-semibold mb-4 ml-4" style={{ color: "white" }}>
+          Bizarre Coders
         </h1>
+        <p className="text-whitee text-justify font-normal">Bizarre Coders is the Community which is a student-run organization on LinkedIn, Twitter & YouTube. We provide resources, opportunities, and various tech programs that help students advance their careers. We also have student mentors who give their time to share their expertise with other student enthusiasts. In addition, we host events on various technologies.
+Feel free to ask us.</p>
         <div className="flex space-x-4">
           <Image src={githublogo} className="w-16 h-16" alt="Company Logo 1" />
           <Image src={githublogo} className="w-16 h-16" alt="Company Logo 2" />
