@@ -18,17 +18,33 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-      <div data-aos="fade-right">
+      <div>
+
         <Hero />
         <Fuck />
 
+        <MotionAnimate
+                        animation='fadeInUp'
+                        reset={true}
+                        distance={200}
+                        delay={1}
+                        speed={1}>
+                        {/* <>Or animate up a lot</> */}
+                        <Team />
+                      </MotionAnimate>
+                    
+add in some cus
         <JoinUs />
-        <Team />
+        
       </div>
+      <MotionAnimate animation='scrollFadeIn'>
       <Footer />
+                      </MotionAnimate>
+      {/* <Footer /> */}
       <MotionAnimate reset={true}>
         <>Just a simple fade</>
       </MotionAnimate>
+      
       {/* <button onClick={() => router.push('/team')}>Team</button> */}
     </div>
   );

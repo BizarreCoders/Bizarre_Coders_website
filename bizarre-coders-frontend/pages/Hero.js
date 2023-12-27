@@ -4,6 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Image from "next/image";
 import githublogo from "./assets/github.png";
 import img1 from "./assets/BC_1.jpeg";
+import { MotionAnimate } from 'react-motion-animate'
 
 // import Chatbot from "./Chatbot";
 
@@ -15,6 +16,9 @@ function Hero() {
   //   };
 
   return (
+
+
+    <MotionAnimate animation='scrollFadeIn'>
     <div className=" items-center min-h-screen py-16 bg-canva_nav justify-center items-center">
       <div className="max-w-2xl px-8">
         <h1 className="text-6xl font-semibold mb-4 ml-4" style={{ color: "white" }}>
@@ -47,6 +51,7 @@ Feel free to ask us.</p>
       <button className="text-whitee">Open Chat</button>
       {/* {showChatbot && <Chatbot /> } */}
     </div>
+    </MotionAnimate>
   );
 }
 
