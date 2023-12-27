@@ -42,7 +42,7 @@ function Navbar() {
             <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <li>
                 <button
-                  className="text-whitee"
+                  className="text-whitee hover:text-xl"
                   onClick={() => router.push("/home")}
                 >
                   Home
@@ -50,7 +50,7 @@ function Navbar() {
               </li>
               <li>
                 <button
-                  className="text-whitee"
+                  className="text-whitee hover:text-xl"
                   onClick={
                     () => router.push("/About")
                     // component ={<About />}
@@ -61,7 +61,7 @@ function Navbar() {
               </li>
               <li>
                 <button
-                  className="text-whitee"
+                  className="text-whitee hover:text-xl"
                   onClick={() => router.push("/testimonial")}
                   element={Testimonials}
                 >
@@ -70,7 +70,7 @@ function Navbar() {
               </li>
               <li>
                 <button
-                  className="text-whitee"
+                  className="text-whitee hover:text-xl"
                   onClick={() => router.push("/team")}
                 >
                   Team
@@ -83,7 +83,7 @@ function Navbar() {
               </li> */}
               <li>
                 <button
-                  className="text-whitee"
+                  className="text-whitee hover:text-xl"
                   onClick={() => router.push("JoinUs")}
                 >
                   Join Us
