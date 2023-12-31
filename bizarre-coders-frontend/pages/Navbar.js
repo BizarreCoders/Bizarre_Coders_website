@@ -42,7 +42,7 @@ function Navbar() {
             <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <li>
                 <button
-                  className="text-whitee hover:text-xl"
+                  className="text-whitee transition duration-300 ease-in-out hover:text-opacity-75"
                   onClick={() => router.push("/home")}
                 >
                   Home
@@ -50,7 +50,7 @@ function Navbar() {
               </li>
               <li>
                 <button
-                  className="text-whitee hover:text-xl"
+                  className="text-whitee transition duration-300 ease-in-out hover:text-opacity-75"
                   onClick={
                     () => router.push("/About")
                     // component ={<About />}
@@ -61,7 +61,7 @@ function Navbar() {
               </li>
               <li>
                 <button
-                  className="text-whitee hover:text-xl"
+                  className="text-whitee transition duration-300 ease-in-out hover:text-opacity-75"
                   onClick={() => router.push("/testimonial")}
                   element={Testimonials}
                 >
@@ -70,20 +70,16 @@ function Navbar() {
               </li>
               <li>
                 <button
-                  className="text-whitee hover:text-xl"
+                  className="text-whitee transition duration-300 ease-in-out hover:text-opacity-75"
                   onClick={() => router.push("/team")}
                 >
                   Team
                 </button>
               </li>
-              {/* <li>
-              <Link href="/team" target="_blank" className="text-whitee">
-                Team         
-              </Link> 
-              </li> */}
+              
               <li>
                 <button
-                  className="text-whitee hover:text-xl"
+                  className="text-whitee transition duration-300 ease-in-out hover:text-opacity-75"
                   onClick={() => router.push("JoinUs")}
                 >
                   Join Us

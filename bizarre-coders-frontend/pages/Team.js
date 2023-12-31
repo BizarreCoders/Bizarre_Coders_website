@@ -68,7 +68,7 @@ const people = [
 ];
 
 function scrollPageUp() {
-  window.scrollTo({ top: 0, behavior: "smooth" });
+  window.scrollTo({ top: 0, behavior: "fast" });
 }
 export default function Example() {
   return (
