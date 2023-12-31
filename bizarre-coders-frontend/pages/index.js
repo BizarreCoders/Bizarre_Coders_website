@@ -8,9 +8,9 @@ import Team from "./Team";
 import JoinUs from "./JoinUs";
 import Footer from "./footer";
 import Fuck from "./Fuck";
-import Stat from "./Stat"
+import Stat from "./Stat";
 // import React, { Component } from 'react'
-import { MotionAnimate } from 'react-motion-animate'
+import { MotionAnimate } from "react-motion-animate";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,34 +20,32 @@ export default function Home() {
     <div>
       <Navbar />
       <div>
-
         <Hero />
         <Fuck />
-
         <MotionAnimate
-                        animation='fadeInUp'
-                        reset={true}
-                        distance={200}
-                        delay={1}
-                        speed={1}>
-                        {/* <>Or animate up a lot</> */}
-                        <Team />
-                      </MotionAnimate>
-                    
-add in some cus
+          animation="fadeInUp"
+          reset={true}
+          distance={10}
+          delay={0.5}
+          speed={1}
+        >
+          {/* <>Or animate up a lot</> */}
+          <Team />
+        </MotionAnimate>
+        add in some cus
         <JoinUs />
-        
       </div>
       <Stat />
-      <MotionAnimate animation='scrollFadeIn'>
-
-      <Footer />
-                      </MotionAnimate>
+      <MotionAnimate animation="scrollFadeIn">
+        <Footer />
+      </MotionAnimate>
       {/* <Footer /> */}
       <MotionAnimate reset={true}>
         <>Just a simple fade</>
       </MotionAnimate>
+
       
+
       {/* <button onClick={() => router.push('/team')}>Team</button> */}
     </div>
   );
