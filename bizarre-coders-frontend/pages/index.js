@@ -8,6 +8,7 @@ import Team from "./Team";
 import JoinUs from "./JoinUs";
 import Footer from "./footer";
 import Fuck from "./Fuck";
+import Stat from "./Stat"
 // import React, { Component } from 'react'
 import { MotionAnimate } from 'react-motion-animate'
 
@@ -37,7 +38,9 @@ add in some cus
         <JoinUs />
         
       </div>
+      <Stat />
       <MotionAnimate animation='scrollFadeIn'>
+
       <Footer />
                       </MotionAnimate>
       {/* <Footer /> */}
