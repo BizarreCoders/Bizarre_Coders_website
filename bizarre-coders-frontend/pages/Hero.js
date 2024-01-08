@@ -51,7 +51,7 @@ function Hero() {
             events on various technologies. Feel free to ask us.
           </p>
           <div className="flex space-x-4">
-            <button className="transition ease-in-out delay-150 text-black bg-whitee hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 rounded-lg text-md px-5 py-2.5 me-2 mb-2">
+            <button className="transition ease-in-out delay-150 text-black bg-whitee hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 rounded-lg text-md px-5 py-2.5 me-2 mb-2 hover: outline-whitee outline-dotted hover:shadow-lg ...">
               Join now!
             </button>
           </div>

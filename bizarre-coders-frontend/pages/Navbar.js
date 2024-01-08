@@ -7,7 +7,7 @@ import githublogo from "./assets/github.png";
 import Testimonials from "./Testimonials";
 
 function Navbar() {
-  const router = useRouter();
+  // const router = useRouter();
   return (
     <div className="w-full h-20">
       <nav className="bg-canva_nav">
