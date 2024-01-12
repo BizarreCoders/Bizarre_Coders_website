@@ -75,6 +75,19 @@ const navigation = {
 export default function Example() {
   return (
     <footer className="bg-canva_nav">
+      {/* <button className="bg-whitee ">
+      <p className="">BACK TO TOP</p>
+    </button> */}
+      <div className="rounded-t-lg">
+        
+
+        <button className="flex w-full h-full relative bg-transparent border-t-0 items-center border-r-4 border-b-4 border-l-4 border-whitee ml-[50%]">
+          <p className="items-center justify-center absolute top-1 transform -translate-x-1/2 -translate-y-1/2 bg-whitee text-black hover:bg-yellow-500">
+            BACK TO TOP
+          </p>
+        </button>
+      </div>
+
       <div className="mx-auto max-w-7xl overflow-hidden py-20 px-6 sm:py-24 lg:px-8 text-whitee">
         <nav
           className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12 text-whitee"

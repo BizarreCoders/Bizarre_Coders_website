@@ -22,4 +22,9 @@ module.exports = {
     }
   },
   plugins: [],
+  variants: {
+    extend: {
+      backgroundColor: ['hover'],
+    },
+  },
 }
