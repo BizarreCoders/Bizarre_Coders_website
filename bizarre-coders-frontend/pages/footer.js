@@ -79,8 +79,6 @@ export default function Example() {
       <p className="">BACK TO TOP</p>
     </button> */}
       <div className="rounded-t-lg">
-        
-
         <button className="flex w-full h-full relative bg-transparent border-t-0 items-center border-r-4 border-b-4 border-l-4 border-whitee ml-[50%]">
           <p className="items-center justify-center absolute top-1 transform -translate-x-1/2 -translate-y-1/2 bg-whitee text-black hover:bg-yellow-500">
             BACK TO TOP
