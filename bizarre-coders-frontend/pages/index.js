@@ -29,7 +29,6 @@ export default function Home() {
           delay={0.5}
           speed={1}
         >
-          {/* <>Or animate up a lot</> */}
           <Team />
         </MotionAnimate>
         add in some cus
@@ -43,8 +42,6 @@ export default function Home() {
       <MotionAnimate reset={true}>
         <>Just a simple fade</>
       </MotionAnimate>
-
-      
 
       {/* <button onClick={() => router.push('/team')}>Team</button> */}
     </div>
