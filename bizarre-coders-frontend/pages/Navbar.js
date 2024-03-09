@@ -5,6 +5,7 @@ import Image from "next/image";
 import logo from "./assets/Bizarre_Coders_logo.png";
 import githublogo from "./assets/github.png";
 import Testimonials from "./Testimonials";
+import Router from "next/router";
 
 function Navbar() {
   return (
