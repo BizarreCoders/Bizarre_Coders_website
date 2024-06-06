@@ -3,9 +3,6 @@ const navigation = {
     { name: "About", href: "#" },
     { name: "Blog", href: "#" },
     { name: "Jobs", href: "#" },
-    { name: "Press", href: "#" },
-    { name: "Accessibility", href: "#" },
-    { name: "Partners", href: "#" },
   ],
   social: [
     {
@@ -79,11 +76,11 @@ export default function Example() {
       <p className="">BACK TO TOP</p>
     </button> */}
       <div className="rounded-t-lg">
-        <button className="flex w-full h-full relative bg-transparent border-t-0 items-center border-r-4 border-b-4 border-l-4 border-whitee ml-[50%]">
+        {/* <button className="flex w-full h-full relative bg-transparent border-t-0 items-center border-r-4 border-b-4 border-l-4 border-whitee ml-[50%]"> */}
           <p className="items-center justify-center absolute top-1 transform -translate-x-1/2 -translate-y-1/2 bg-whitee text-black hover:bg-yellow-500">
             BACK TO TOP
           </p>
-        </button>
+        {/* </button> */}
       </div>
 
       <div className="mx-auto max-w-7xl overflow-hidden py-20 px-6 sm:py-24 lg:px-8 text-whitee">
@@ -92,7 +89,7 @@ export default function Example() {
           aria-label="Footer"
         >
           {navigation.main.map((item) => (
-            <div key={item.name} className="pb-6 text-whitee">
+            <div key={item.name} className="pb-6 text-whitee hover:scale-125">
               <a
                 href={item.href}
                 className="text-sm leading-6 text-gray-600 hover:text-gray-900"
