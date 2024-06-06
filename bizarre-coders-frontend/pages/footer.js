@@ -3,9 +3,6 @@ const navigation = {
     { name: "About", href: "#" },
     { name: "Blog", href: "#" },
     { name: "Jobs", href: "#" },
-    { name: "Press", href: "#" },
-    { name: "Accessibility", href: "#" },
-    { name: "Partners", href: "#" },
   ],
   social: [
     {
@@ -92,7 +89,7 @@ export default function Example() {
           aria-label="Footer"
         >
           {navigation.main.map((item) => (
-            <div key={item.name} className="pb-6 text-whitee">
+            <div key={item.name} className="pb-6 text-whitee hover:scale-125">
               <a
                 href={item.href}
                 className="text-sm leading-6 text-gray-600 hover:text-gray-900"
